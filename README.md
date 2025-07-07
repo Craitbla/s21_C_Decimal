@@ -148,3 +148,8 @@ typedef struct
 - Запрещено использование типа __int128;
 - Конечные нули можно как оставлять, так и удалять (за исключением функции `s21_truncate`);
 - Определяемый тип должен поддерживать числа от -79,228,162,514,264,337,593,543,950,335 до +79,228,162,514,264,337,593,543,950,335.
+
+## Авторы проекта:
+  * Aglet Craitbla ([GitHub](https://github.com/Craitbla))
+  * Daniil Karaulov dksss ([GitHub](https://github.com/dksss))
+  * Данил Geronimo112263 ([GitHub](https://github.com/Geronimo112263))

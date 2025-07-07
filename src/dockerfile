@@ -1,0 +1,21 @@
+FROM alpine:3.20
+
+# Устанавливаем зависимости
+RUN apk add --no-cache \
+    build-base \
+    check-dev \
+    git \
+    bash \
+    lcov \
+    subunit-dev  # Добавляем недостающую библиотеку
+
+# Копируем исходный код
+WORKDIR /app
+COPY . .
+
+# Компилируем и запускаем тесты
+CMD ["sh", "-c", "\
+    make clean && \
+    make all && \
+    make test && \
+    make gcov_report"]
